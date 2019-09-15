@@ -23,20 +23,25 @@ function treasure(location) {
         if (location === foundTreasure) {
             document.getElementById("table").innerHTML = "You Win!";
 
-            document.getElementById("endGameMessage").innerHTML = `🤑`;
+            var win = document.createElement("IMG");
+                win.setAttribute("src", "https://media1.giphy.com/media/3o7bu57lYhUEFiYDSM/giphy.gif");
+                win.setAttribute("width", "500");
+                win.setAttribute("height", "500");
+                win.setAttribute("alt", "win");
+                document.body.appendChild(win);
+
             document.getElementById("percentageMessage").innerHTML = "";
 
         } else if (location === losingTreasure) {
             document.getElementById("table").innerHTML = "You Lose!";
 
-            var x = document.createElement("IMG");
-                x.setAttribute("src", "https://media1.giphy.com/media/3o7bu57lYhUEFiYDSM/giphy.gif");
-                x.setAttribute("width", "304");
-                x.setAttribute("height", "228");
-                x.setAttribute("alt", "The Pulpit Rock");
-                document.body.appendChild(x);
-                
-            document.getElementById("endGameMessage").innerHTML = x;
+            var lose = document.createElement("IMG");
+                lose.setAttribute("src", "https://cdn.vox-cdn.com/uploads/chorus_asset/file/8689379/anigif_enhanced_946_1433453114_7.gif");
+                lose.setAttribute("width", "500");
+                lose.setAttribute("height", "500");
+                lose.setAttribute("alt", "lost");
+                document.body.appendChild(lose);
+
 
             document.getElementById("percentageMessage").innerHTML = "";
 
