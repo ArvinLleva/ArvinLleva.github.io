@@ -1,0 +1,87 @@
+* {
+    text-align: center;
+}
+
+body {
+    font-family: Ewert-Regular;
+    background-image: url("./circus-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#clown-img {
+    height: 400px;
+
+}
+
+#title {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+ul {
+    font-size: 25px;
+}
+
+
+@font-face {
+    font-family: Ewert-Regular ;
+    src: url('./Ewert-Regular.ttf') format('truetype');
+}
+
+.game-intro-div {
+    display: flex;
+    justify-content: center;
+}
+
+#rules {
+    list-style-type: none;
+}
+
+
+.balloon {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+
+}
+
+.game-intro-class {
+
+}
+
+.clown-div {
+}
+
+.wooden-frame {
+    height: 300px;
+    width: 300px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    height: 300px;
+    width: 300px;
+}
+
+.clown-in-booth {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+}
+
+/* .game-intro-div {
+    background-image: url("https://c.pxhere.com/photos/d3/a1/ferris_wheel_night_folk_festival_ride_fair_hustle_and_bustle_mood_night_photograph-535416.jpg!d");
+}
+
+.game-play-div {
+    background-image: url("https://previews.123rf.com/images/nomadsoul1/nomadsoul11303/nomadsoul1130302558/18433100-close-up-of-cork-board-background-or-texture.jpg");
+} */

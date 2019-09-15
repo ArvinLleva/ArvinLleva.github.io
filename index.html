@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Carnival Ballon Game</title>
+        <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2013/07/12/18/37/booty-153593_960_720.png">
+        <link rel="stylesheet" href="./carnival.css">
+    </head>
+    <body>
+        <h1 id="title">Carnival Ballon Game</h1>
+
+        <div class="game-intro-div">
+            <div class="game-intro-class">
+
+                <h2>Test your luck!</h2>
+
+
+                <h2>Rules:</h2>
+                <ul id="rules">
+                    <li>Click to pop the ballons to find a the price</li>
+                    <li>You find a prize you win.</li>
+                    <li>You find the clown you lose</li>
+                </ul>
+            </div>
+
+            <div class="clown-div">
+                <!-- <img src="https://i0.wp.com/www.inflatableoffice.com/users/images/741fe42eea897d21923cdc4a88f1e4d4.png?w=750&ssl=1" alt="booth" style=" height:200px"> -->
+                <img src="http://crballoonsetc.com/files/2015/04/Sparkles-307x2941.png?w=1060&h=1060&a=t" alt="clown" id="clown-img">
+            </div>
+
+
+        </div>
+
+        <div class="game-play-div">
+
+
+            <h2>The Game:</h2>
+            <div class="game-grid">
+                <table id="table">
+                    <tr>
+                        <td id="0" onclick="treasure(0)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+
+                            <!-- <img src="https://img.pngio.com/plush-toy-png-file-png-mart-plush-animal-png-1500_1500.png" alt="stuffed-animal"> -->
+                        </td>
+
+                        <td id="1" onclick="treasure(1)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+                        </td>
+                        <td id="2" onclick="treasure(2)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="3" onclick="treasure(3)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+                        </td>
+                        <td id="4" onclick="treasure(4)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+                        </td>
+                        <td id="5" onclick="treasure(5)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="6" onclick="treasure(6)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+                        </td>
+                        <td id="7" onclick="treasure(7)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+                        </td>
+                        <td id="8" onclick="treasure(8)">
+                            <img class="balloon" src="https://purepng.com/public/uploads/large/purepng.com-balloonsballoonrubber-balloonlatex-balloonred-1421526450055kebvc.png" alt="balloon">
+
+                            <img class="wooden-frame"src="https://5.imimg.com/data5/PK/JP/MY-2964860/pictureframes-pixabay2-250x250.png" alt="wooden-frame">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <p id="endGameMessage"></p>
+
+            <h3>Current Percentage</h3>
+
+            <p id="percentageMessage"></p>
+
+            <button type="button" name="button" onclick="location.reload()">Restart Game</button>
+        </div>
+        <footer>
+            <p> Arvin Charlie </p>
+            <a href="#title">To the top</a>
+            <a href="https://www.thepennyhoarder.com/make-money/side-gigs/become-a-treasure-hunter/" target="_blank"> Treasure Hunt</a>
+        </footer>
+        <script type="text/javascript" src="./carnival.js"></script>
+
+    </body>
+</html>
