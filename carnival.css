@@ -27,6 +27,17 @@ ul {
     font-size: 25px;
 }
 
+.textTitle {
+    font-size: 50px; 
+}
+
+#percentageTitle {
+    font-size: 50px; 
+}
+
+#percentageMessage {
+    font-size: 50px; 
+}
 
 @font-face {
     font-family: Ewert-Regular ;
